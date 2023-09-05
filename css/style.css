@@ -81,20 +81,19 @@
   .searchForm {
     display: inline-flex;
     max-width: 100%;
-    overflow: 20px;
   }
   .searchForm i {
-    padding: 1.6rem 1.4rem;
+   padding: 1.1rem;
     border-radius: 1rem 0 0 1rem;
   }
   .searchFormWrapiconIcon {
     background-color: #d9d9d9;
   }
   .searchFormSearchinput {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     background-color: white;
-    height: 56px;
+    height: 49px;
     border: var(--filter-bg-color);
   } 
   .searchForm button {
@@ -105,8 +104,8 @@
     gap: 10px;
     font-size: 18px;
     color: white;
-    width: 123px;
-    height: 55px;
+    width: 132px;
+    height: 49px;
     /* Blue */
     background: #0065fc;
     /* Blue */
@@ -118,21 +117,19 @@
     flex-grow: 0;
   }
   
-  .filiter-list h1 {
+  .filiter-list h2 {
     margin-bottom: 1rem;
   }
-  
-  .Filter-list {
+    .Filter-list {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-
+    gap: 1.4rem;
     flex-wrap: wrap;
   }
   .filter {
     border: 2px solid #d9d9d9;
     border-radius: 3rem;
-    padding: 0.3rem;
+    padding: 0.4rem;
     transition: all 200ms ease;
   }
   .filter:hover {
@@ -151,13 +148,12 @@
   .fas.fa-heart {
     color: #0065fc;
   }
-  .fa-solid .fa-fire {
-    color: #0065fc;
+  .fa-xs.neutral-star{
+    color: gray;
   }
   .group {
     font-weight: bold;
-    margin: 5px;
-    box-shadow: #deebff;
+    margin: 2px;
     padding: 5px;
   }
   .fa-chart-line {
@@ -202,13 +198,6 @@
     display: flex;
     width: 100%;
     height: 124px;
-    background: url(fred-kleber-gTbaxaVLvsg-unsplash);
-    /* White */
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
   }
   .activités-card{
     gap: 20px;
@@ -238,7 +227,7 @@
     justify-content: space-between;
   }
   .activités-title {
-    margin: 0rem 4rem;
+    margin: 0rem 3rem;
   }
   .Voir-plus {
     width: 811px;
@@ -400,10 +389,10 @@
 
     }
     .hebergements-card.card{
-      width: 100%;
+      width: 33%;
     }
     .hebergements-card img{
-     width: 200px;
+     width: 100%;
       height: 100px;
     }
     .hebergements-title{
@@ -451,19 +440,19 @@
     .activités-card .card{
         width: 100%;
     }
+    .activités-card .card-content{
+        height: 50px;
+    }
+    .activités-title{
+        font-size: 14px;
+    }
+    .activités-title{
+        margin: 1rem;
+    }
     .activités-card img{
         width: 100%;
         height: 200px;
-
-        background: url(paul-hermann-QFTrLdQIRhI-unsplash.jpg);
         border-radius: 20px 20px 0px 0px;
-
-         /* Inside auto layout */
-
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
     }
     .pieds-site {
       gap: 20px;
@@ -496,10 +485,16 @@
     }
     .activity {
       width: 100%;
-      
     }
     .searchFormSubmitinputText {
       display: none;
+    }
+    .filter{
+        width: 42%;
+    }
+    .Filter-list {
+        gap: 0.5rem;
+        
     }
     #logo {
       width: auto;
@@ -511,13 +506,29 @@
       flex-wrap: wrap;
       gap: 20PX;
     }
+    .searchHeaderTitle{
+        width: 100%;
+    }
     .searchForm button {
-      width: 70px;
-      height: 56px;
+        width: 49px;
+        height: 53px;
+        padding: 15px 16px;
+        top: calc(50% - 49px/2);
+        border: 2px solid #0065FC;
+        border-radius: 15px;
+        right: 0px;
     }
-    .filiter-list, h1{
-      padding-right: 45%;
+    .searchFormSearchinput{
+        width: 335px;
+        height: 49px
     }
+    .fa-search{
+        margin: -1rem;
+    }
+    .Filter-list h2{
+      width: 100%;
+    }
+
     .hebergements-card{
         flex-direction: column;
         gap: 20px;
@@ -528,18 +539,8 @@
     .hebergements-card img{
         width: 98%;
         height: 124px;
-       background: url(nicate-lee-kT-ZyaiwBe0-unsplash);
-       /* White */
-
       border: 5px solid #FFFFFF;
       border-radius: 20px 20px 0px 0px;
-
-      /* Inside auto layout */
-
-      flex: none;
-      order: 0;
-      align-self: stretch;
-      
     }
     #accommodation.hebergements{
      background-color: white;
@@ -570,22 +571,23 @@
     .activités-card img{
         width: 100%;
         height: 141px;
-
-        background: url(florian-wehde);
         border-radius: 20px 20px 0px 0px;
-
-        /* Inside auto layout */
-
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
     }
-
+    .activités-title h2{
+        width: 100%;
+        font-size: 22px;
+    }
+    .hebergements-title h2{
+        width: 100%;
+        font-size: 22px;
+    }
+    .activités-title{
+        margin: 1rem;
+    }
     .populaires-cards .card-title {
       font-size: 14px;
     }
-  
+ 
     .populaires-cards .card-subtitle {
       font-size: 13px;
     }
@@ -593,7 +595,7 @@
       display: block;
     }
     .footerColumn{
-        margin: +3rem;
+        margin: 3rem;
     }
-    
+   
   }
